@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: 'DM Sans', sans-serif; color: #f6efe4; background: #0a1114; font-synthesis: none; text-rendering: optimizeLegibility; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; }
+.font-serif { font-family: 'Playfair Display', serif; }
+.firefly { position: absolute; z-index: 2; border-radius: 9999px; background: #f7d8a3; box-shadow: 0 0 8px 3px rgba(247,216,163,.72); animation: float 3.8s ease-in-out infinite; }
+@keyframes float { 0%, 100% { transform: translate3d(0, 0, 0); opacity: .45; } 50% { transform: translate3d(7px, -16px, 0); opacity: 1; } }
+@keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+.animate-rise { animation: rise .9s ease-out both; }
+::selection { background: #d4b58b; color: #142326; }
